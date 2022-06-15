@@ -1,5 +1,4 @@
-// autotest for method https://reqres.in/api/users?page=2
-
+// autotests for method https://reqres.in/api/users?page=2
 
 pm.test("Status code is 200", function () {
     pm.response.to.have.status(200);
@@ -18,7 +17,7 @@ pm.test("Verify Page Data", function () {
 });
 
 
-//autotest for method https://reqres.in/api/users/23
+//autotests for method https://reqres.in/api/users/23
 
 pm.test("User not found", function () {
     pm.response.to.have.status(404);
@@ -28,7 +27,7 @@ pm.test("Response time is less than 1000ms", function () {
     pm.expect(pm.response.responseTime).to.be.below(1000);
 });
 
-//autotest for method https://reqres.in/api/users/2
+//autotests for method https://reqres.in/api/users/2
 
 pm.test("User is displayed successfully", function () {
     pm.response.to.have.status(200);
